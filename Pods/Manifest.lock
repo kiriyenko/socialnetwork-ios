@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - IQKeyboardManagerSwift (6.5.2)
+  - ModelMapper (10.0.0):
+    - ModelMapper/Core (= 10.0.0)
+  - ModelMapper/Core (10.0.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya-ModelMapper (9.0.0):
+    - Moya-ModelMapper/Core (= 9.0.0)
+  - Moya-ModelMapper/Core (9.0.0):
+    - ModelMapper (~> 10.0)
+    - Moya (~> 13.0)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+
+DEPENDENCIES:
+  - AlamofireImage (= 3.5)
+  - IQKeyboardManagerSwift (= 6.5.2)
+  - Moya (= 13.0.1)
+  - Moya-ModelMapper (= 9.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - IQKeyboardManagerSwift
+    - ModelMapper
+    - Moya
+    - Moya-ModelMapper
+    - Result
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  IQKeyboardManagerSwift: c75366f1f19590e8caeae45fcd5815c9289d6099
+  ModelMapper: a8dbf2a2003bf626627b9fe7c9a22b3405a30404
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Moya-ModelMapper: 4948625af7fc5eef41ad9fdfe0c3517170b50960
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+
+PODFILE CHECKSUM: 5695c1a43d78fc50df38e82bc39a5bda6469a4d9
+
+COCOAPODS: 1.8.4

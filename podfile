@@ -1,0 +1,13 @@
+platform :ios, '11.0'
+
+
+target 'SocialNetwork' do
+  use_frameworks!
+
+  pod 'IQKeyboardManagerSwift', '6.5.2'
+  pod 'Moya', '13.0.1'
+  pod 'Moya-ModelMapper', '9.0.0'
+  pod 'AlamofireImage', '3.5'
+
+end
+
