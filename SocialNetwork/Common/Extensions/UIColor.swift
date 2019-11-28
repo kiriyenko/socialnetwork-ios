@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UIColor.swift
 //  SocialNetwork
 //
 //  Created by Taras Kiriienko on 28/11/2019.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+extension UIColor {
     
+    class var darkColor: UIColor {
+        return UIColor(named: "dark-color")!
+    }
     
 }
-

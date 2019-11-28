@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		90FCE2B9F4B85A56356C0CE1 /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDBF4DA8281C9E95045D943 /* Pods_SocialNetwork.framework */; };
 		CB697DBF23904F64003A1E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DBE23904F64003A1E09 /* AppDelegate.swift */; };
 		CB697DC123904F64003A1E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DC023904F64003A1E09 /* SceneDelegate.swift */; };
-		CB697DC323904F64003A1E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DC223904F64003A1E09 /* ViewController.swift */; };
-		CB697DC623904F64003A1E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB697DC423904F64003A1E09 /* Main.storyboard */; };
+		CB697DC323904F64003A1E09 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DC223904F64003A1E09 /* PeopleViewController.swift */; };
+		CB697DC623904F64003A1E09 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB697DC423904F64003A1E09 /* People.storyboard */; };
 		CB697DC823904F67003A1E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB697DC723904F67003A1E09 /* Assets.xcassets */; };
 		CB697DCB23904F67003A1E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB697DC923904F67003A1E09 /* LaunchScreen.storyboard */; };
+		CB8808FE23905E86001DAD2A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8808FD23905E86001DAD2A /* BaseViewController.swift */; };
+		CB88090B2390622D001DAD2A /* Gilroy-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB8809022390622D001DAD2A /* Gilroy-Regular.otf */; };
+		CB8809102390622D001DAD2A /* Gilroy-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB8809072390622D001DAD2A /* Gilroy-Bold.otf */; };
+		CB8809112390622D001DAD2A /* Gilroy-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB8809082390622D001DAD2A /* Gilroy-Semibold.otf */; };
+		CB88091623906400001DAD2A /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB88091523906400001DAD2A /* PeopleTableViewCell.swift */; };
+		CB88091923906AE0001DAD2A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB88091823906AE0001DAD2A /* UIColor.swift */; };
+		CB88091D23907132001DAD2A /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB88091B23907132001DAD2A /* CALayer.swift */; };
+		CB88092223907A7C001DAD2A /* Hind-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB88091F23907A7C001DAD2A /* Hind-Bold.ttf */; };
+		CB88092323907A7C001DAD2A /* Hind-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB88092023907A7C001DAD2A /* Hind-SemiBold.ttf */; };
+		CB88092423907A7C001DAD2A /* Hind-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB88092123907A7C001DAD2A /* Hind-Regular.ttf */; };
+		CB8809272390868F001DAD2A /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8809262390868E001DAD2A /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +33,22 @@
 		CB697DBB23904F64003A1E09 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB697DBE23904F64003A1E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB697DC023904F64003A1E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB697DC223904F64003A1E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB697DC523904F64003A1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB697DC223904F64003A1E09 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		CB697DC523904F64003A1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/People.storyboard; sourceTree = "<group>"; };
 		CB697DC723904F67003A1E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB697DCA23904F67003A1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB697DCC23904F67003A1E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8808FD23905E86001DAD2A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CB8809022390622D001DAD2A /* Gilroy-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.otf"; sourceTree = "<group>"; };
+		CB8809072390622D001DAD2A /* Gilroy-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.otf"; sourceTree = "<group>"; };
+		CB8809082390622D001DAD2A /* Gilroy-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.otf"; sourceTree = "<group>"; };
+		CB88091523906400001DAD2A /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		CB88091823906AE0001DAD2A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CB88091B23907132001DAD2A /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		CB88091F23907A7C001DAD2A /* Hind-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Bold.ttf"; sourceTree = "<group>"; };
+		CB88092023907A7C001DAD2A /* Hind-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-SemiBold.ttf"; sourceTree = "<group>"; };
+		CB88092123907A7C001DAD2A /* Hind-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Regular.ttf"; sourceTree = "<group>"; };
+		CB8809262390868E001DAD2A /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		D79D83B0C2A0C71B2F148A47 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,8 +70,25 @@
 				D79D83B0C2A0C71B2F148A47 /* Pods-SocialNetwork.debug.xcconfig */,
 				2DD6320D203A61FFA2C4A479 /* Pods-SocialNetwork.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB3F8FC823905BCD00C3ABE0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3F8FC923905BE300C3ABE0 /* List */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB3F8FC923905BE300C3ABE0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CB880914239063DF001DAD2A /* Cells */,
+				CB697DC423904F64003A1E09 /* People.storyboard */,
+				CB697DC223904F64003A1E09 /* PeopleViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		CB697DB223904F64003A1E09 = {
@@ -73,15 +112,96 @@
 		CB697DBD23904F64003A1E09 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				CB8808FB23905E3F001DAD2A /* Common */,
+				CB3F8FC823905BCD00C3ABE0 /* Controllers */,
 				CB697DBE23904F64003A1E09 /* AppDelegate.swift */,
 				CB697DC023904F64003A1E09 /* SceneDelegate.swift */,
-				CB697DC223904F64003A1E09 /* ViewController.swift */,
-				CB697DC423904F64003A1E09 /* Main.storyboard */,
 				CB697DC723904F67003A1E09 /* Assets.xcassets */,
 				CB697DC923904F67003A1E09 /* LaunchScreen.storyboard */,
 				CB697DCC23904F67003A1E09 /* Info.plist */,
 			);
 			path = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		CB8808FB23905E3F001DAD2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB8808FF2390622D001DAD2A /* Assets */,
+				CB8808FC23905E46001DAD2A /* Base */,
+				CB88091723906ACC001DAD2A /* Extensions */,
+				CB8809252390868E001DAD2A /* Managers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CB8808FC23905E46001DAD2A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CB8808FD23905E86001DAD2A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB8808FF2390622D001DAD2A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CB8809002390622D001DAD2A /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CB8809002390622D001DAD2A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB88091E23907A7C001DAD2A /* Hind */,
+				CB8809012390622D001DAD2A /* Gilroy */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CB8809012390622D001DAD2A /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				CB8809022390622D001DAD2A /* Gilroy-Regular.otf */,
+				CB8809072390622D001DAD2A /* Gilroy-Bold.otf */,
+				CB8809082390622D001DAD2A /* Gilroy-Semibold.otf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		CB880914239063DF001DAD2A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB88091523906400001DAD2A /* PeopleTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB88091723906ACC001DAD2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB88091823906AE0001DAD2A /* UIColor.swift */,
+				CB88091B23907132001DAD2A /* CALayer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB88091E23907A7C001DAD2A /* Hind */ = {
+			isa = PBXGroup;
+			children = (
+				CB88091F23907A7C001DAD2A /* Hind-Bold.ttf */,
+				CB88092023907A7C001DAD2A /* Hind-SemiBold.ttf */,
+				CB88092123907A7C001DAD2A /* Hind-Regular.ttf */,
+			);
+			path = Hind;
+			sourceTree = "<group>";
+		};
+		CB8809252390868E001DAD2A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB8809262390868E001DAD2A /* HapticManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		DD9975DD63EF315FA08C738E /* Frameworks */ = {
@@ -152,9 +272,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB88092423907A7C001DAD2A /* Hind-Regular.ttf in Resources */,
 				CB697DCB23904F67003A1E09 /* LaunchScreen.storyboard in Resources */,
+				CB88092223907A7C001DAD2A /* Hind-Bold.ttf in Resources */,
 				CB697DC823904F67003A1E09 /* Assets.xcassets in Resources */,
-				CB697DC623904F64003A1E09 /* Main.storyboard in Resources */,
+				CB88090B2390622D001DAD2A /* Gilroy-Regular.otf in Resources */,
+				CB88092323907A7C001DAD2A /* Hind-SemiBold.ttf in Resources */,
+				CB8809102390622D001DAD2A /* Gilroy-Bold.otf in Resources */,
+				CB8809112390622D001DAD2A /* Gilroy-Semibold.otf in Resources */,
+				CB697DC623904F64003A1E09 /* People.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB697DC323904F64003A1E09 /* ViewController.swift in Sources */,
+				CB88091623906400001DAD2A /* PeopleTableViewCell.swift in Sources */,
+				CB88091D23907132001DAD2A /* CALayer.swift in Sources */,
+				CB8809272390868F001DAD2A /* HapticManager.swift in Sources */,
+				CB88091923906AE0001DAD2A /* UIColor.swift in Sources */,
+				CB697DC323904F64003A1E09 /* PeopleViewController.swift in Sources */,
+				CB8808FE23905E86001DAD2A /* BaseViewController.swift in Sources */,
 				CB697DBF23904F64003A1E09 /* AppDelegate.swift in Sources */,
 				CB697DC123904F64003A1E09 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,12 +347,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB697DC423904F64003A1E09 /* Main.storyboard */ = {
+		CB697DC423904F64003A1E09 /* People.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CB697DC523904F64003A1E09 /* Base */,
 			);
-			name = Main.storyboard;
+			name = People.storyboard;
 			sourceTree = "<group>";
 		};
 		CB697DC923904F67003A1E09 /* LaunchScreen.storyboard */ = {
