@@ -24,6 +24,8 @@ class PeopleViewController: BaseViewController {
     
     @IBAction func addButtonTouched(_ sender: Any) {
         HapticManager.shared.generateFeedback(.selection)
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "ManagePeopleViewController") as? ManagePeopleViewController else { return }
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
@@ -42,6 +44,9 @@ extension PeopleViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         HapticManager.shared.generateFeedback(.selection)
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "ManagePeopleViewController") as? ManagePeopleViewController else { return }
+        viewController.setPerson(Person(name: "Name", surname: "Surname", email: "email@example.com"))
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
