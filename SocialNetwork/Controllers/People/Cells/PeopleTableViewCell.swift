@@ -40,10 +40,10 @@ class PeopleTableViewCell: UITableViewCell {
     
     // MARK: Methods
     
-    func configure() {
-        if let imageUrl = URL(string: "") { avatarImageView.af_setImage(withURL: imageUrl) }
-        nameLabel.text = "John Doe"
-        emailLabel.text = "johndoe@gmail.com"
+    func configure(person: Person) {
+        if let imageUrl = URL(string: person.avatarUrl ?? "") { avatarImageView.af_setImage(withURL: imageUrl) }
+        nameLabel.text = person.fullName
+        emailLabel.text = person.email ?? ""
     }
     
     func highlight() {

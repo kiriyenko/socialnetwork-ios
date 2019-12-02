@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		90FCE2B9F4B85A56356C0CE1 /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDBF4DA8281C9E95045D943 /* Pods_SocialNetwork.framework */; };
 		CB06374B2392E9D00039CB55 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06374A2392E9D00039CB55 /* AlertViewController.swift */; };
+		CB19DC6B2395A74900F2651D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19DC6A2395A74900F2651D /* String.swift */; };
 		CB697DBF23904F64003A1E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DBE23904F64003A1E09 /* AppDelegate.swift */; };
 		CB697DC123904F64003A1E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DC023904F64003A1E09 /* SceneDelegate.swift */; };
 		CB697DC323904F64003A1E09 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB697DC223904F64003A1E09 /* PeopleViewController.swift */; };
@@ -27,6 +28,10 @@
 		CB88092423907A7C001DAD2A /* Hind-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB88092123907A7C001DAD2A /* Hind-Regular.ttf */; };
 		CB8809272390868F001DAD2A /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8809262390868E001DAD2A /* HapticManager.swift */; };
 		CBAB49B42392EE150020587E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB49B32392EE150020587E /* Person.swift */; };
+		CBAB49B72392FD390020587E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB49B62392FD390020587E /* NetworkManager.swift */; };
+		CBAB49B92392FD570020587E /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB49B82392FD570020587E /* ApiTarget.swift */; };
+		CBAB49BB2392FEB40020587E /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB49BA2392FEB40020587E /* Problem.swift */; };
+		CBAB49BD2392FFFA0020587E /* PeopleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB49BC2392FFFA0020587E /* PeopleManager.swift */; };
 		CBAD00E12391831B0005E8C7 /* ManagePeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD00E02391831B0005E8C7 /* ManagePeopleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +39,7 @@
 		2DD6320D203A61FFA2C4A479 /* Pods-SocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.release.xcconfig"; path = "Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		4EDBF4DA8281C9E95045D943 /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB06374A2392E9D00039CB55 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		CB19DC6A2395A74900F2651D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CB697DBB23904F64003A1E09 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB697DBE23904F64003A1E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB697DC023904F64003A1E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		CB88092123907A7C001DAD2A /* Hind-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Regular.ttf"; sourceTree = "<group>"; };
 		CB8809262390868E001DAD2A /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		CBAB49B32392EE150020587E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CBAB49B62392FD390020587E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CBAB49B82392FD570020587E /* ApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTarget.swift; sourceTree = "<group>"; };
+		CBAB49BA2392FEB40020587E /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		CBAB49BC2392FFFA0020587E /* PeopleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleManager.swift; sourceTree = "<group>"; };
 		CBAD00E02391831B0005E8C7 /* ManagePeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePeopleViewController.swift; sourceTree = "<group>"; };
 		D79D83B0C2A0C71B2F148A47 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +143,7 @@
 		CB8808FB23905E3F001DAD2A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CBAB49B52392FD150020587E /* API */,
 				CB8808FF2390622D001DAD2A /* Assets */,
 				CB8808FC23905E46001DAD2A /* Base */,
 				CB88091723906ACC001DAD2A /* Extensions */,
@@ -189,8 +200,9 @@
 		CB88091723906ACC001DAD2A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CB88091823906AE0001DAD2A /* UIColor.swift */,
 				CB88091B23907132001DAD2A /* CALayer.swift */,
+				CB88091823906AE0001DAD2A /* UIColor.swift */,
+				CB19DC6A2395A74900F2651D /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8809262390868E001DAD2A /* HapticManager.swift */,
+				CBAB49BC2392FFFA0020587E /* PeopleManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -217,8 +230,18 @@
 			isa = PBXGroup;
 			children = (
 				CBAB49B32392EE150020587E /* Person.swift */,
+				CBAB49BA2392FEB40020587E /* Problem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CBAB49B52392FD150020587E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB49B82392FD570020587E /* ApiTarget.swift */,
+				CBAB49B62392FD390020587E /* NetworkManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		DD9975DD63EF315FA08C738E /* Frameworks */ = {
@@ -350,16 +373,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAB49B92392FD570020587E /* ApiTarget.swift in Sources */,
+				CBAB49B72392FD390020587E /* NetworkManager.swift in Sources */,
 				CB88091623906400001DAD2A /* PeopleTableViewCell.swift in Sources */,
 				CB88091D23907132001DAD2A /* CALayer.swift in Sources */,
 				CBAD00E12391831B0005E8C7 /* ManagePeopleViewController.swift in Sources */,
 				CB06374B2392E9D00039CB55 /* AlertViewController.swift in Sources */,
 				CBAB49B42392EE150020587E /* Person.swift in Sources */,
+				CBAB49BB2392FEB40020587E /* Problem.swift in Sources */,
 				CB8809272390868F001DAD2A /* HapticManager.swift in Sources */,
 				CB88091923906AE0001DAD2A /* UIColor.swift in Sources */,
 				CB697DC323904F64003A1E09 /* PeopleViewController.swift in Sources */,
 				CB8808FE23905E86001DAD2A /* BaseViewController.swift in Sources */,
 				CB697DBF23904F64003A1E09 /* AppDelegate.swift in Sources */,
+				CBAB49BD2392FFFA0020587E /* PeopleManager.swift in Sources */,
+				CB19DC6B2395A74900F2651D /* String.swift in Sources */,
 				CB697DC123904F64003A1E09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
