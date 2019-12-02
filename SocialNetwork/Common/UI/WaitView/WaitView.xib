@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WaitView" customModule="SocialNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngX-F5-HkZ">
+                    <rect key="frame" x="132" y="378" width="150" height="150"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2IQ-mr-P09">
+                            <rect key="frame" x="56.5" y="56.5" width="37" height="37"/>
+                            <color key="color" name="dark-color"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2IQ-mr-P09" firstAttribute="centerX" secondItem="ngX-F5-HkZ" secondAttribute="centerX" id="23C-As-ndd"/>
+                        <constraint firstItem="2IQ-mr-P09" firstAttribute="centerY" secondItem="ngX-F5-HkZ" secondAttribute="centerY" id="4rf-aW-8n2"/>
+                        <constraint firstAttribute="width" constant="150" id="Odn-nK-aEy"/>
+                        <constraint firstAttribute="height" constant="150" id="cwM-VU-P31"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ngX-F5-HkZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iVZ-cL-DSI"/>
+                <constraint firstItem="ngX-F5-HkZ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="pfT-WC-2d9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="holderView" destination="ngX-F5-HkZ" id="CCj-DY-zWo"/>
+                <outlet property="indicatorView" destination="2IQ-mr-P09" id="TwL-dH-jgr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="dark-color">
+            <color red="0.30980392156862746" green="0.28235294117647058" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
