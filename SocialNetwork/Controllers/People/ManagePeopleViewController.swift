@@ -34,18 +34,31 @@ class ManagePeopleViewController: BaseViewController {
         finishButton.setTitle(finishButtonTitle, for: .normal)
         
         finishButton.layer.cornerRadius = 10
+        
+        if manageType == .edit { setupPerson() }
+    }
+    
+    private func setupPerson() {
+        guard let person = person else { return }
+        if let name = person.name { nameInput.text = name }
+        if let surname = person.surname { surnameInput.text = surname }
+        if let email = person.email { emailInput.text = email }
     }
     
     // MARK: Validators
         
-    private func isInputsValid() -> Bool {
-        return nameInput.hasText && surnameInput.hasText && emailInput.hasText
-    }
-     
-    private func isEmailValid() -> Bool {
-        guard let email = emailInput.text else { return false }
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+    private func validateInputs() -> Bool {
+        let isInputsValid = nameInput.hasText && surnameInput.hasText && emailInput.hasText
+        
+        if !isInputsValid {
+            showAlert(title: "Error", message: "Please, fill up all inputs", action: nil)
+            return false
+        } else if !emailInput.hasEmail() {
+            showAlert(title: "Error", message: "Please, enter correct email", action: nil)
+            return false
+        }
+        
+        return true
     }
     
     // MARK: Methods
@@ -54,18 +67,35 @@ class ManagePeopleViewController: BaseViewController {
         self.person = person
     }
     
-    // MARK: Actions
-    
-    @IBAction func finishButtonTouched(_ sender: Any) {
-        if !isInputsValid() {
-            showAlert(title: "Error", message: "All inputs must be filled!", action: nil)
-            return
-        } else if !isEmailValid() {
-            showAlert(title: "Error", message: "Enter the correct email!", action: nil)
+    private func finishManagment(problem: Problem?) {
+        if let problem = problem {
+            self.showAlert(title: "Error", message: problem.error, action: nil)
             return
         }
         
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func finishButtonTouched(_ sender: Any) {
+        if !validateInputs() { return }
+        
+        var updatedPerson = Person(ident: nil, name: nameInput.text, surname: surnameInput.text, email: emailInput.text, avatarUrl: nil)
+        
+        if manageType == .create {
+            PeopleManager.shared.addPerson(updatedPerson) { problem in
+                self.finishManagment(problem: problem)
+                return
+            }
+        }
+        
+        guard let person = person else { return }
+        updatedPerson.ident = person.ident ?? 0
+        
+        PeopleManager.shared.updatePerson(updatedPerson) { problem in
+            self.finishManagment(problem: problem)
+        }
     }
     
 }
