@@ -12,6 +12,8 @@ import Foundation
 enum HapticType: String {
     case impact
     case selection
+    case success
+    case error
 }
 
 class HapticManager: NSObject {
@@ -28,6 +30,12 @@ class HapticManager: NSObject {
         case .selection:
             let selection = UISelectionFeedbackGenerator()
             selection.selectionChanged()
+        case .success:
+            let success = UINotificationFeedbackGenerator()
+            success.notificationOccurred(.success)
+        case .error:
+            let error = UINotificationFeedbackGenerator()
+            error.notificationOccurred(.error)
         }
     }
     

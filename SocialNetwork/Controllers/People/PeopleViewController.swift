@@ -40,8 +40,11 @@ class PeopleViewController: BaseViewController {
     // MARK: Methods
     
     private func loadData() {
+        showWaiting()
         PeopleManager.shared.getPeople { problem in
+            self.hideWaiting()
             if let problem = problem {
+                HapticManager.shared.generateFeedback(.error)
                 self.showAlert(title: "Error", message: problem.error, action: nil)
                 return
             }
@@ -64,6 +67,7 @@ class PeopleViewController: BaseViewController {
     @objc private func refreshData() {
         PeopleManager.shared.getPeople { problem in
             if let problem = problem {
+                HapticManager.shared.generateFeedback(.error)
                 self.showAlert(title: "Error", message: problem.error, action: nil)
                 return
             }

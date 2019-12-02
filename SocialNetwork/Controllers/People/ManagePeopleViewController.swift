@@ -69,22 +69,30 @@ class ManagePeopleViewController: BaseViewController {
     
     private func finishManagment(problem: Problem?) {
         if let problem = problem {
+            HapticManager.shared.generateFeedback(.error)
             self.showAlert(title: "Error", message: problem.error, action: nil)
             return
         }
         
+        HapticManager.shared.generateFeedback(.success)
         self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: Actions
     
     @IBAction func finishButtonTouched(_ sender: Any) {
-        if !validateInputs() { return }
+        HapticManager.shared.generateFeedback(.selection)
+        if !validateInputs() {
+            HapticManager.shared.generateFeedback(.error)
+            return
+        }
         
         var updatedPerson = Person(ident: nil, name: nameInput.text, surname: surnameInput.text, email: emailInput.text, avatarUrl: nil)
         
         if manageType == .create {
+            showWaiting()
             PeopleManager.shared.addPerson(updatedPerson) { problem in
+                self.hideWaiting()
                 self.finishManagment(problem: problem)
                 return
             }
@@ -93,7 +101,9 @@ class ManagePeopleViewController: BaseViewController {
         guard let person = person else { return }
         updatedPerson.ident = person.ident ?? 0
         
+        showWaiting()
         PeopleManager.shared.updatePerson(updatedPerson) { problem in
+            self.hideWaiting()
             self.finishManagment(problem: problem)
         }
     }
